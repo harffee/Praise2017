@@ -1,0 +1,15 @@
+﻿@model IEnumerable<Praise2017.Models.Detail>
+
+@{
+    ViewBag.Title = "datailList";
+}
+
+@foreach (var p in Model)
+{
+    <div class="item">
+        <p><em>@p.Name</em> <i>praised</i> <em>@p.ToWho</em> for</p> 
+        <p>@p.Desc</p>
+        <p>@p.UpdateDate</p>
+    </div>
+}
+
