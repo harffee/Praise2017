@@ -16,9 +16,9 @@ namespace Praise2017.Controllers
             this.repository = detailRepo;
         }
         // GET: Home
-        public ViewResult datailList()
+        public ViewResult DetailList()
         {
-            return View(repository.Details);
+            return View(repository.Details.ToList());
         }
     }
 }

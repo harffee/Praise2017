@@ -7,8 +7,12 @@ using Praise2017.Models;
 
 namespace Praise2017.Concrete
 {
-    public class EFDbContext
+    public class EFDbContext : DbContext
     {
+        //public EFDbContext() : base("EFDbContext")
+        //{
+
+        //}
         //两个表名 Accounts,Details
         public DbSet<AccountInfo> Accounts { get; set; }
         public DbSet<Detail> Details { get; set; }
