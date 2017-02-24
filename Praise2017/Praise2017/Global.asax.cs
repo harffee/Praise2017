@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
-using Praise2017.Infrastructure;
+//using Praise2017.Infrastructure;
 
 namespace Praise2017
 {
@@ -16,8 +16,8 @@ namespace Praise2017
             RouteConfig.RegisterRoutes(RouteTable.Routes);
 
             //告诉mvc使用自定义d类来创建控制器对象
-            ControllerBuilder.Current.SetControllerFactory(new
-                NinjectControllerFactory());
+            //ControllerBuilder.Current.SetControllerFactory(new
+            //    NinjectControllerFactory());
         }
     }
 }

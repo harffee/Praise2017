@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
+using System.Data.Entity;
 
 namespace Praise2017.Models
 {
@@ -18,5 +19,7 @@ namespace Praise2017.Models
         Admin,
         User
     }
+   
+    
 
 }

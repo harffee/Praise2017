@@ -4,12 +4,13 @@
     ViewBag.Title = "DetailList";
 }
 
+<h2>DetailList</h2>
+
 @foreach (var p in Model)
 {
     <div class="item">
-        <p><em>@p.Name</em> <i>praised</i> <em>@p.ToWho</em> for</p> 
-        <p>@p.Descrip</p>
-        <p>@p.UpdateDate</p>
+    <p><em>@p.Name</em> <i>praised</i> <em>@p.ToWho</em> for</p>
+    <p>@p.Descrip</p>
+    <p>@p.UpdateDate</p>
     </div>
 }
-
