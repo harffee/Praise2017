@@ -6,25 +6,18 @@ namespace Praise2017.Controllers
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
 
-    public partial class Detail
+    public partial class Account
     {
         [Key]
-        [Column(Order = 0)]
         [StringLength(50)]
         public string Name { get; set; }
 
-        public DateTime? UpdateDate { get; set; }
-
-        [Key]
-        [Column(Order = 1)]
-        public string Descrip { get; set; }
-
-        [Key]
-        [Column(Order = 2)]
+        [Required]
         [StringLength(50)]
-        public string ToWho { get; set; }
+        public string Alias { get; set; }
 
-        [StringLength(10)]
-        public string UpdateId { get; set; }
+        [Required]
+        [StringLength(50)]
+        public string Role { get; set; }
     }
 }

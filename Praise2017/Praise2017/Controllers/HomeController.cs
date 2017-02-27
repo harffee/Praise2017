@@ -1,25 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using System.Linq;
 using System.Web.Mvc;
-//using Praise2017.Abstract;
-using Praise2017.Models;
-using Praise2017.Concrete;
-
 
 namespace Praise2017.Controllers
 {
     public class HomeController : Controller
     {
-        
+
         private EFDbContext db = new EFDbContext();
+       // var db = new EFDbContext;
 
-        public ActionResult DetailList()
+        public PartialViewResult DetailList()
         {
-
-            return View(db.Details.ToList());
+            var query = from b in db.Details
+                        //orderby b.UpdateDate
+                        select b;
+            
+            return PartialView(query);
         }
+
 
 
     }
