@@ -35,15 +35,15 @@ namespace Praise2017.Controllers
         public PartialViewResult PerInfo()
         {
             //得到赞总数
-            int Got=from b in db.Details
-                       where b.ToWho==user
-
-
             //发出赞总数
-
-            //当前用户角色
-
+            //当前用户角色 都要被显示
+            var info = from b in db.Accounts
+                       where b.Name == user
+                       select b;
+            return PartialView(info);
         }
+
+        //查询用户
 
     }
 }

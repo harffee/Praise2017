@@ -19,5 +19,8 @@ namespace Praise2017.Controllers
         [Required]
         [StringLength(50)]
         public string Role { get; set; }
+
+        public int Got { get; set; }
+        public int Give { get; set; }
     }
 }
