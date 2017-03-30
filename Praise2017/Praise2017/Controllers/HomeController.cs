@@ -38,7 +38,7 @@ namespace Praise2017.Controllers
             //发出赞总数
             //当前用户角色 都要被显示
             var info = from b in db.Accounts
-                       where b.Name == user
+                       where b.Alias == user
                        select b;
             return PartialView(info);
         }
