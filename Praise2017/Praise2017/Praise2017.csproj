@@ -184,6 +184,7 @@
     <Content Include="Views\Home\DetailList.cshtml" />
     <Content Include="Views\Home\PerInfo.cshtml" />
     <Content Include="Views\Home\MainPage.cshtml" />
+    <Content Include="Views\Home\TopPraise.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
