@@ -163,6 +163,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Models\Account.cs" />
     <Compile Include="Models\Detail.cs" />
     <Compile Include="Models\EFDbContext.cs" />
@@ -185,6 +186,7 @@
     <Content Include="Views\Home\PerInfo.cshtml" />
     <Content Include="Views\Home\MainPage.cshtml" />
     <Content Include="Views\Home\TopPraise.cshtml" />
+    <Content Include="Views\StartPage.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -195,6 +197,7 @@
   <ItemGroup>
     <Folder Include="Abstract\" />
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Admin\" />
     <Folder Include="Views\Test\" />
   </ItemGroup>
   <PropertyGroup>
