@@ -12,7 +12,11 @@ namespace Praise2017.Controllers
         //获取当前登录用户
         string user = System.Environment.UserName;
 
-
+        //加载StartPage页面
+        public ViewResult StartPage()
+        {
+            return View();
+        }
 
         private EFDbContext db = new EFDbContext();
 

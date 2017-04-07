@@ -139,9 +139,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\agency.css" />
+    <Content Include="Content\agency.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\PraiseDIY.css" />
+    <Content Include="Content\simple-sidebar.css" />
     <Content Include="Content\Site.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -149,11 +152,41 @@
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Content\img\about\1.jpg" />
+    <Content Include="Content\img\about\2.jpg" />
+    <Content Include="Content\img\about\3.jpg" />
+    <Content Include="Content\img\about\4.jpg" />
+    <Content Include="Content\img\header-bg.jpg" />
+    <Content Include="Content\img\logos\creative-market.jpg" />
+    <Content Include="Content\img\logos\designmodo.jpg" />
+    <Content Include="Content\img\logos\envato.jpg" />
+    <Content Include="Content\img\logos\themeforest.jpg" />
+    <Content Include="Content\img\map-image.png" />
+    <Content Include="Content\img\portfolio\dreams-preview.png" />
+    <Content Include="Content\img\portfolio\dreams.png" />
+    <Content Include="Content\img\portfolio\escape-preview.png" />
+    <Content Include="Content\img\portfolio\escape.png" />
+    <Content Include="Content\img\portfolio\golden-preview.png" />
+    <Content Include="Content\img\portfolio\golden.png" />
+    <Content Include="Content\img\portfolio\roundicons-free.png" />
+    <Content Include="Content\img\portfolio\roundicons.png" />
+    <Content Include="Content\img\portfolio\startup-framework-preview.png" />
+    <Content Include="Content\img\portfolio\startup-framework.png" />
+    <Content Include="Content\img\portfolio\treehouse-preview.png" />
+    <Content Include="Content\img\portfolio\treehouse.png" />
+    <Content Include="Content\img\team\1.jpg" />
+    <Content Include="Content\img\team\2.jpg" />
+    <Content Include="Content\img\team\3.jpg" />
+    <Content Include="Scripts\agency.js" />
+    <Content Include="Scripts\agency.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\contact_me.js" />
+    <Content Include="Scripts\jqBootstrapValidation.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
@@ -186,7 +219,7 @@
     <Content Include="Views\Home\PerInfo.cshtml" />
     <Content Include="Views\Home\MainPage.cshtml" />
     <Content Include="Views\Home\TopPraise.cshtml" />
-    <Content Include="Views\StartPage.cshtml" />
+    <Content Include="Views\Home\StartPage.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
