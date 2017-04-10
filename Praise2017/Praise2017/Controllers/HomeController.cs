@@ -80,5 +80,16 @@ namespace Praise2017.Controllers
 
         //查询用户
 
+        //Make Praise
+        public PartialViewResult Praise()
+        {
+            IEnumerable<string> member = from b in db.Accounts
+                                         select b.Name;
+            string[] people = member.ToArray();
+            return PartialView(member);
+        }
+
+        
+
     }
 }
