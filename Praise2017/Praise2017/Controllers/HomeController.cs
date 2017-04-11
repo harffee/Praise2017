@@ -45,7 +45,7 @@ namespace Praise2017.Controllers
             {
                 rank[i][0] = people[i];
                 rank[i][1] = (from b in db.Details
-                              where b.Month == month
+                              
                               where b.Name == people[i]
                               select b).Count().ToString();
             }

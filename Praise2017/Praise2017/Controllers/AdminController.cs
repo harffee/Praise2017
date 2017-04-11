@@ -10,14 +10,16 @@ namespace Praise2017.Controllers
     {
         // GET: Admin
         private EFDbContext db = new EFDbContext();
-        public PartialViewResult Details()
+        public PartialViewResult Admin()
         {
+            //取出Name和头像
+            var member = from b in db.Accounts
+                       
+                         select new { b.Name, b.Picture };
+                                         
+            //string[] people = member.ToArray();
 
-            IEnumerable<string> member = from b in db.Accounts
-                                         select b.Name;
-            string[] people = member.ToArray();
-
-            return PartialView();
+            return PartialView(member);
         }
 
     }

@@ -143,6 +143,8 @@
     <Content Include="Content\agency.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\img\userpic\meng.jpg" />
+    <Content Include="Content\img\userpic\zj.jpg" />
     <Content Include="Content\PraiseDIY.css" />
     <Content Include="Content\simple-sidebar.css" />
     <Content Include="Content\Site.css" />
@@ -269,6 +271,7 @@
     <Content Include="vendor\font-awesome\scss\_stacked.scss" />
     <Content Include="vendor\font-awesome\scss\_variables.scss" />
     <Content Include="Views\Home\Praise.cshtml" />
+    <Content Include="Views\Admin\Admin.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -279,7 +282,6 @@
   <ItemGroup>
     <Folder Include="Abstract\" />
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Admin\" />
     <Folder Include="Views\Shared\" />
     <Folder Include="Views\Test\" />
   </ItemGroup>

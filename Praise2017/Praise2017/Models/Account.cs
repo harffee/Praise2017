@@ -1,4 +1,4 @@
-namespace Praise2017.Controllers
+﻿namespace Praise2017.Controllers
 {
     using System;
     using System.Collections.Generic;
@@ -22,5 +22,8 @@ namespace Praise2017.Controllers
 
         public int Got { get; set; }
         public int Give { get; set; }
+
+        //头像
+        public string Picture { get; set; }
     }
 }

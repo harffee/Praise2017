@@ -27,6 +27,6 @@ namespace Praise2017.Controllers
         [StringLength(10)]
         public string UpdateId { get; set; }
 
-        public int Month { get; set; }
+       // public int Month { get; set; }
     }
 }
