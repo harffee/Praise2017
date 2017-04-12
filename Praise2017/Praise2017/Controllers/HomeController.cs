@@ -83,9 +83,9 @@ namespace Praise2017.Controllers
         //Make Praise
         public PartialViewResult Praise()
         {
-            IEnumerable<string> member = from b in db.Accounts
-                                         select b.Name;
-            string[] people = member.ToArray();
+            var member = from b in db.Accounts
+                                         select b;
+           
             return PartialView(member);
         }
 

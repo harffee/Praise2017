@@ -272,6 +272,7 @@
     <Content Include="vendor\font-awesome\scss\_variables.scss" />
     <Content Include="Views\Home\Praise.cshtml" />
     <Content Include="Views\Admin\Admin.cshtml" />
+    <Content Include="Views\Admin\AddUser.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
