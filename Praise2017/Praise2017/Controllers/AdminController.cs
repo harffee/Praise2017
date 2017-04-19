@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Data.Entity.Infrastructure;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -25,9 +26,30 @@ namespace Praise2017.Controllers
             
         }
 
+        public PartialViewResult UserControlBtn()
+        {
+            return PartialView();
+        }
         public PartialViewResult AddUser()
         {
-           
+            return PartialView();
+        }
+          [HttpPost]
+        public PartialViewResult AddUser([Bind(Include ="Name,Alias,Role")] Account accounts)
+        {
+            try
+            {
+                if(ModelState.IsValid)
+                {
+                    db.Accounts.Add(accounts);
+                    db.SaveChanges();
+                }
+            }
+            catch (RetryLimitExceededException /* dex */)
+            {
+                //Log the error (uncomment dex variable name and add a line here to write a log.
+                ModelState.AddModelError("", "Unable to save changes. Try again, and if the problem persists see your system administrator.");
+            }
             return PartialView();
         }
     }
