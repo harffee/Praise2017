@@ -28,12 +28,15 @@ namespace Praise2017.Controllers
 
         public PartialViewResult UserControlBtn()
         {
+           
             return PartialView();
         }
+
         public PartialViewResult AddUser()
         {
-            return PartialView();
+            return PartialView(new Account());
         }
+
           [HttpPost]
         public PartialViewResult AddUser([Bind(Include ="Name,Alias,Role")] Account accounts)
         {
@@ -52,5 +55,16 @@ namespace Praise2017.Controllers
             }
             return PartialView();
         }
+
+        public PartialViewResult DeleteUser()
+        {
+            return PartialView();
+        }
+
+        //[HttpPost]
+        //public PartialViewResult DeleteUser()
+        //{
+        //    return PartialView();
+        //}
     }
 }

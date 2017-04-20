@@ -1,4 +1,7 @@
-﻿<button class="btn btn-primary" type="button" data-toggle="modal" data-target="#UserCon">User Control</button>
+﻿@model IEnumerable<Praise2017.Controllers.Account>
+
+
+<button class="btn btn-primary" type="button" data-toggle="modal" data-target="#UserCon">User Control</button>
 
 <div class="modal" id="UserCon">
     <div class="modal-dialog">
@@ -10,26 +13,25 @@
             </div>
 
             <div class="modal-body">
-                <form name="sentMessage" id="contactForm" novalidate>
+               
                     <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                              @Html.RenderPartial(AddUser);
-                            </div>
-                          
-                            
-
-                        </div>
-
-                        <div class="clearfix"></div>
-
+                      
+                           
+                               <div>@Html.Action("AddUser", "Admin")</div> 
+                                @*@Html.Partial("AddUser")*@
+                           
+                       
                     </div>
                     <div class="row">
                         <div class="form-group">
+                            Hello2
                             <!--delete-->
+                          @*@Html.Partial*@
                         </div>
-                        </div>
-</form>
+                    </div>
+                    <div class="clearfix"></div>
+
+         
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
