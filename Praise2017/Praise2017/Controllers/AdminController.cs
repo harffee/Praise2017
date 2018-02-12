@@ -53,12 +53,18 @@ namespace Praise2017.Controllers
                 //Log the error (uncomment dex variable name and add a line here to write a log.
                 ModelState.AddModelError("", "Unable to save changes. Try again, and if the problem persists see your system administrator.");
             }
-            return PartialView();
+            //return PartialView();
+
+            DeleteUser();
         }
 
+        // 1. 分页
         public PartialViewResult DeleteUser()
         {
-            return PartialView();
+            var member = from b in db.Accounts
+
+                         select b;
+            return PartialView(member);
         }
 
         //[HttpPost]

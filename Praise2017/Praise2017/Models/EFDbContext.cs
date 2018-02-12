@@ -15,11 +15,11 @@ namespace Praise2017.Controllers
         public virtual DbSet<Account> Accounts { get; set; }
         public virtual DbSet<Detail> Details { get; set; }
 
-        protected override void OnModelCreating(DbModelBuilder modelBuilder)
-        {
-            modelBuilder.Entity<Detail>()
-                .Property(e => e.UpdateId)
-                .IsFixedLength();
-        }
+        //protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        //{
+        //         modelBuilder.Entity<Detail>()
+        //        .Property(e => e.UpdateId)
+        //        .IsFixedLength();
+        //}
     }
 }

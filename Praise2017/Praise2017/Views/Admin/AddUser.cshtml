@@ -1,17 +1,16 @@
 ﻿@model Praise2017.Controllers.Account
 
-@using (Html.BeginForm())
-{
-    <form name="addMember" id="contactForm" novalidate>
+
+    <form action="~/Controllers/AdminController/AddUser" method="post" name="addMember" id="contactForm" novalidate>
         <div class="row">
             <div class="col-md-6">
                 <div class="form-group">
                    
-                    <input type="text" class="form-control" value="Name" id="name" required data-validation-required-message="Please enter the name">
+                    <input type="text" class="form-control" value="@Model.Name" id="name" required data-validation-required-message="Please enter the name">
                     <p class="help-block text-danger"></p>
                 </div>
                 <div class="form-group">
-                    <input type="text" class="form-control" value="Alias" id="alias" required data-validation-required-message="Please enter alias">
+                   <input type="text" class="form-control" value="@Model.Alias" id="alias" required data-validation-required-message="Please enter alias">
                    
                     <p class="help-block text-danger"></p>
                 </div>
@@ -32,10 +31,11 @@
             <div class="clearfix"></div>
 
         </div>
+     
         <button type="submit" class="btn btn-primary">Add</button>
     </form>
 
-}
+
 
 
 
